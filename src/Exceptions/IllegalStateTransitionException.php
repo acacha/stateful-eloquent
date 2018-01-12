@@ -21,7 +21,7 @@ class IllegalStateTransitionException extends \LogicException
     /**
      * IllegalStateTransitionException constructor.
      * 
-     * @param $messages
+     * @param $message
      */
     public function __construct(MessageBag $message)
     {
