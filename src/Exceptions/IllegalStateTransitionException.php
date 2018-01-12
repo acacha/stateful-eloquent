@@ -16,16 +16,16 @@ class IllegalStateTransitionException extends \LogicException
      * 
      * @var MessageBag
      */
-    protected $messages;
+    protected $message;
 
     /**
      * IllegalStateTransitionException constructor.
      * 
      * @param $messages
      */
-    public function __construct(MessageBag $messages)
+    public function __construct(MessageBag $message)
     {
-        $this->messages = $messages;
+        $this->message = $message;
     }
 
     /**
@@ -35,7 +35,7 @@ class IllegalStateTransitionException extends \LogicException
      */
     public function messages()
     {
-        return $this->messages;
+        return $this->message;
     }
 
     
